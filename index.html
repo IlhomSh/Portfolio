@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ilkhom Shergoziyev</title>
+<meta name="description" content="Android developer at Telecom Soft — the apps behind JSC Uztelecom." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" />
+<style>
+  :root{
+    --paper:#ECEEE9;
+    --surface:#F6F7F3;
+    --ink:#0E1A18;
+    --muted:#5A6A64;
+    --line:#D2D7D0;
+    --accent:#0F6E5C;
+    --accent-soft:#0f6e5c1a;
+    --live:#C2701C;
+    --shadow:0 1px 0 #ffffffb3 inset;
+    --frame:#0e1a1814;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0C1513;
+      --surface:#121F1C;
+      --ink:#E3E9E4;
+      --muted:#8FA39B;
+      --line:#22322D;
+      --accent:#54C2A6;
+      --accent-soft:#54c2a61f;
+      --live:#E1A560;
+      --shadow:none;
+      --frame:#00000059;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0C1513;
+    --surface:#121F1C;
+    --ink:#E3E9E4;
+    --muted:#8FA39B;
+    --line:#22322D;
+    --accent:#54C2A6;
+    --accent-soft:#54c2a61f;
+    --live:#E1A560;
+    --shadow:none;
+    --frame:#00000059;
+  }
+
+  *{box-sizing:border-box;}
+  img{max-width:100%;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    max-width:880px;
+    margin:0 auto;
+    padding:56px 24px 72px;
+    display:flex;
+    flex-direction:column;
+    gap:56px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 152px;
+    gap:32px;
+    align-items:start;
+  }
+  .hello{
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 12px;
+  }
+  h1{
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-variation-settings:"wdth" 112;
+    font-weight:700;
+    font-size:clamp(34px,6.4vw,54px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .role{
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-variation-settings:"wdth" 108;
+    font-weight:500;
+    font-size:16px;
+    color:var(--muted);
+    margin:12px 0 0;
+  }
+  .role strong{color:var(--ink);font-weight:600;}
+  .portrait{
+    width:152px;height:152px;
+    border-radius:50%;
+    display:block;
+    object-fit:cover;
+    background:var(--surface);
+    box-shadow:0 0 0 1px var(--line), 0 0 0 8px var(--accent-soft);
+  }
+  .lede{margin:0;font-size:19px;max-width:62ch;}
+  .lede.quiet{color:var(--muted);}
+
+  /* ---------- contact rail ---------- */
+  .rail{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px 8px 12px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:var(--surface);
+    box-shadow:var(--shadow);
+    color:var(--ink);
+    text-decoration:none;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:13px;
+    transition:border-color .18s ease, color .18s ease, transform .18s ease;
+  }
+  .chip svg{width:15px;height:15px;flex:none;fill:currentColor;opacity:.75;}
+  .chip:hover,.chip:focus-visible{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);}
+  a:focus-visible,.chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+
+  /* ---------- sections ---------- */
+  section{display:flex;flex-direction:column;gap:24px;}
+  .eyebrow{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0;
+  }
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);transform:translateY(-3px);}
+  .eyebrow .count{color:var(--accent);}
+
+  /* ---------- projects ---------- */
+  .projects{display:flex;flex-direction:column;gap:8px;}
+  .project{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    padding:28px 0 32px;
+    border-top:1px solid var(--line);
+  }
+  .project:last-child{border-bottom:1px solid var(--line);}
+  .phead{
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr);
+    gap:2px 14px;
+    align-items:center;
+  }
+  .picon{
+    grid-row:span 2;
+    width:44px;height:44px;
+    border-radius:11px;
+    object-fit:cover;
+    background:var(--surface);
+    box-shadow:0 0 0 1px var(--frame);
+  }
+  .phead h3{
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-variation-settings:"wdth" 106;
+    font-weight:600;
+    font-size:21px;
+    letter-spacing:-.01em;
+    margin:0;
+    align-self:end;
+  }
+  .tags{
+    display:flex;flex-wrap:wrap;gap:4px 10px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    align-self:start;
+    margin:0;
+  }
+  .tags b{font-weight:500;color:var(--accent);}
+  .tags .wip{color:var(--live);font-weight:500;}
+  .pdesc{margin:0;max-width:64ch;}
+  .stack{
+    margin:0;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:12px;
+    line-height:1.7;
+    color:var(--muted);
+    max-width:70ch;
+  }
+  .stack span{color:var(--ink);}
+
+  .stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px 40px;
+    padding:16px 20px;
+    border-left:2px solid var(--accent);
+    background:var(--accent-soft);
+    border-radius:0 3px 3px 0;
+  }
+  .stat b{
+    display:block;
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-variation-settings:"wdth" 100;
+    font-weight:700;
+    font-size:22px;
+    letter-spacing:-.02em;
+    font-variant-numeric:tabular-nums;
+  }
+  .stat span{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  .hero{margin:0;}
+  .hero img{
+    display:block;
+    width:100%;
+    border-radius:3px;
+    box-shadow:0 0 0 1px var(--frame);
+  }
+  .strip{
+    display:flex;
+    gap:12px;
+    overflow-x:auto;
+    padding-bottom:8px;
+    scroll-snap-type:x proximity;
+  }
+  .strip img{
+    height:300px;
+    width:auto;
+    flex:none;
+    border-radius:3px;
+    box-shadow:0 0 0 1px var(--frame);
+    scroll-snap-align:start;
+  }
+  .more-link{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:12px;
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    align-self:flex-start;
+  }
+  .more-link:hover{border-bottom-color:var(--accent);}
+  .sub{display:flex;flex-direction:column;gap:4px;}
+  .sub h4{
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-weight:600;font-size:16px;margin:0;
+  }
+  .sub p{margin:0;color:var(--muted);max-width:62ch;}
+
+  /* ---------- experience ---------- */
+  .roles{display:flex;flex-direction:column;gap:28px;}
+  .role-item{display:grid;grid-template-columns:180px minmax(0,1fr);gap:8px 28px;}
+  .when{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:13px;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+    padding-top:4px;
+    margin:0;
+  }
+  .when .now{color:var(--live);display:inline-flex;align-items:center;gap:6px;}
+  .when .now::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--live);}
+  .role-item h3{
+    font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+    font-variation-settings:"wdth" 106;
+    font-weight:600;font-size:19px;margin:0;letter-spacing:-.01em;
+  }
+  .role-item h3 span{color:var(--muted);font-weight:400;}
+  .role-item p{margin:6px 0 0;color:var(--muted);max-width:56ch;}
+
+  /* ---------- closing ---------- */
+  .closing{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .closing p{margin:0;font-size:22px;font-style:italic;max-width:34ch;}
+  footer{
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  }
+
+  @media (max-width:620px){
+    .page{padding:40px 20px 56px;gap:44px;}
+    .masthead{grid-template-columns:1fr;gap:24px;}
+    .portrait{width:104px;height:104px;}
+    .role-item{grid-template-columns:1fr;gap:4px;}
+    .when{padding-top:0;}
+    .strip img{height:230px;}
+    .closing{padding:24px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div>
+      <p class="hello">Hey there &#128075;&#127995;</p>
+      <h1>Ilkhom<br />Shergoziyev</h1>
+      <p class="role">Android Developer &nbsp;·&nbsp; <strong>Telecom Soft</strong>, Tashkent</p>
+    </div>
+    <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Ilkhom Shergoziyev" />
+  </header>
+
+  <section>
+    <p class="lede">I build the Android apps behind JSC Uztelecom &mdash; where creativity knows no bounds and attention is paid to every pixel.</p>
+    <p class="lede quiet">6+ years of experience in user-centric product development. Able to deliver high-quality products on time, with experience building and implementing enterprise-level systems.</p>
+    <div class="rail">
+      <a class="chip" href="mailto:ilhomshergoziyev@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.6.5 7.4 5.6L19.4 6H4.6Zm15.4 1.7-7.4 5.6a1 1 0 0 1-1.2 0L4 7.7V18.5c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.7Z" /></svg>
+        ilhomshergoziyev@gmail.com
+      </a>
+      <a class="chip" href="tel:+998994371169">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z" /></svg>
+        +998 99 437 11 69
+      </a>
+      <a class="chip" href="https://t.me/Ilhom_Shergoziyev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.24 1.06-.87 1.32-1.76.82l-4.86-3.58-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.95 9.02-8.15c.4-.35-.08-.54-.6-.2L6.37 13.1 1.6 11.6c-1.04-.32-1.06-1.04.22-1.54L20.55 2.8c.86-.32 1.62.2 1.35 1.5Z" /></svg>
+        t.me/Ilhom_Shergoziyev
+      </a>
+      <a class="chip" href="https://www.linkedin.com/in/ilhomshergoziyev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6.5 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.2 8.75 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.05-3.32-2.05 0-2.37 1.58-2.37 3.21V21h-4V9Z" /></svg>
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="eyebrow">Projects <span class="count">05</span></h2>
+    <div class="projects">
+
+      <article class="project">
+        <div class="phead">
+          <img class="picon" src="assets/myuztelecom-icon.png" alt="MyUztelecom app icon" />
+          <h3>MyUztelecom</h3>
+          <p class="tags"><b>Official app</b> · Android · Google Play · Huawei AppGallery</p>
+        </div>
+        <figure class="hero"><img src="assets/myuztelecom-hero.jpg" alt="MyUztelecom app screens" /></figure>
+        <p class="pdesc">The self-service application of JSC &ldquo;Uztelecom&rdquo;. Customers watch their tariff plan, call history and extra charges, switch plans, enable SMS / internet / call packages, turn on roaming, pay for services and send card-to-card transfers &mdash; the operator in a pocket.</p>
+        <div class="stats">
+          <div class="stat"><b>1.2M</b><span>monthly active users</span></div>
+          <div class="stat"><b>$800k+</b><span>services sold in-app / month</span></div>
+        </div>
+        <p class="stack"><span>Kotlin</span> · MVVM · RxJava · Retrofit · OkHttp · Jackson · Glide · Navigation · Firebase · Koin · Google Maps · Glance widgets</p>
+        <div class="strip">
+          <img src="assets/myuztelecom-1.jpg" alt="MyUztelecom screen: packages" />
+          <img src="assets/myuztelecom-2.jpg" alt="MyUztelecom screen: payment operations" />
+          <img src="assets/myuztelecom-3.jpg" alt="MyUztelecom screen: tariff details" />
+          <img src="assets/myuztelecom-4.jpg" alt="MyUztelecom screen: linked accounts" />
+        </div>
+        <a class="more-link" href="https://shergoziyev.notion.site/MyUztelecom-047755775b6643efb66d4eff8f1fbe4d" target="_blank" rel="noopener">Full case &rarr;</a>
+      </article>
+
+      <article class="project">
+        <div class="phead">
+          <img class="picon" src="assets/telecomcar-icon.png" alt="TelecomCar app icon" />
+          <h3>TelecomCar</h3>
+          <p class="tags"><b>Official app</b> · Android + iOS · Google Play · App Store</p>
+        </div>
+        <p class="pdesc">An internal ride service for Uztelecom employees. Staff order a car to a destination &mdash; or to several destinations in one trip &mdash; drivers accept and complete the ride, and the same app carries postal and shipping runs. One Flutter codebase, shipped to both stores.</p>
+        <p class="stack"><span>Flutter</span> · GetX state management · GraphQL · Dio · Hive · Firebase · Google Maps · Open Store · Connectivity</p>
+        <div class="strip">
+          <img src="assets/telecomcar-1.jpg" alt="TelecomCar Android screens" />
+          <img src="assets/telecomcar-2.jpg" alt="TelecomCar iOS screens" />
+        </div>
+        <a class="more-link" href="https://shergoziyev.notion.site/TelecomCar-4883ef104b5944d6b1b138410641e8fa" target="_blank" rel="noopener">Full case &rarr;</a>
+      </article>
+
+      <article class="project">
+        <div class="phead">
+          <img class="picon" src="assets/mediabox-icon.png" alt="Mediabox app icon" />
+          <h3>Mediabox</h3>
+          <p class="tags"><span class="wip">Startup</span> · Android · Android TV</p>
+        </div>
+        <figure class="hero"><img src="assets/mediabox-hero.jpg" alt="Mediabox TV interface playing live sport" /></figure>
+        <p class="pdesc">Uztelecom&rsquo;s most modern TV / OTT / VOD platform: a technology stack that rolls the service out across every platform under the company&rsquo;s brand in a short time, at minimal cost and with active technical support. The client is built for Android phones and Android TV.</p>
+        <div class="strip">
+          <img src="assets/mediabox-1.jpg" alt="Mediabox home screen" />
+          <img src="assets/mediabox-2.jpg" alt="Mediabox catalogue" />
+          <img src="assets/mediabox-3.jpg" alt="Mediabox player" />
+        </div>
+        <a class="more-link" href="https://shergoziyev.notion.site/Startup-Mediabox-92bf11de388648bcbe5df3e41f93e237" target="_blank" rel="noopener">Full case &rarr;</a>
+      </article>
+
+      <article class="project">
+        <div class="phead">
+          <img class="picon" src="assets/telecomchat-icon.png" alt="TelecomChat app icon" />
+          <h3>TelecomChat</h3>
+          <p class="tags"><span class="wip">Startup</span> · Flutter · Not published yet</p>
+        </div>
+        <figure class="hero"><img src="assets/telecomchat-hero.jpg" alt="TelecomChat messenger screens" /></figure>
+        <p class="pdesc">A reliable, secure and fast messenger for business correspondence between employees, with voice messages and photo sharing. Built in Flutter; not on Google Play or the App Store yet.</p>
+        <a class="more-link" href="https://shergoziyev.notion.site/Startup-TelecomChat-4639dd22e7ed4925b4908d6c7bf2a4ba" target="_blank" rel="noopener">Full case &rarr;</a>
+      </article>
+
+      <article class="project">
+        <div class="phead">
+          <img class="picon" src="assets/more-icon.png" alt="Test-2022 app icon" />
+          <h3>More</h3>
+          <p class="tags">Collection · Android + iOS</p>
+        </div>
+        <div class="sub">
+          <h4>Test&#8209;2022</h4>
+          <p>Android and iOS app for supervising test sessions online through video surveillance.</p>
+        </div>
+        <div class="sub">
+          <h4>EpaUsta</h4>
+          <p>Published on Google Play.</p>
+        </div>
+        <div class="strip">
+          <img src="assets/more-1.jpg" alt="Test-2022 monitoring screens" />
+          <img src="assets/more-2.jpg" alt="Test-2022 session screens" />
+          <img src="assets/more-3.jpg" alt="Test-2022 detail screens" />
+        </div>
+        <a class="more-link" href="https://shergoziyev.notion.site/More-bc40861b50a44f15acc9e2cec7b1f55f" target="_blank" rel="noopener">Full case &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="eyebrow">Experience</h2>
+    <div class="roles">
+      <div class="role-item">
+        <p class="when">December 2023 &ndash;<br /><span class="now">Present</span></p>
+        <div>
+          <h3>Android Developer <span>/ Telecom Soft</span></h3>
+          <p>I develop new applications and build creative ones on top of newer frameworks.</p>
+        </div>
+      </div>
+      <div class="role-item">
+        <p class="when">August 2019 &ndash;<br />December 2023</p>
+        <div>
+          <h3>Android Developer <span>/ JSC Uztelecom</span></h3>
+          <p>Worked on the development of new applications and collaborated with several teams to add new features to existing ones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <p>I have a passion for programming.</p>
+    <div class="rail">
+      <a class="chip" href="mailto:ilhomshergoziyev@gmail.com">Let&rsquo;s chat &rarr;</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Tashkent, Uzbekistan</span>
+    <span>Set on an 8&#8239;dp grid</span>
+  </footer>
+
+</div>
+</body>
+</html>
