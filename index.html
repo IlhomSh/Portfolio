@@ -305,7 +305,11 @@
 
   @media (max-width:620px){
     .page{padding:40px 20px 56px;gap:44px;}
-    @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+    .role-item{grid-template-columns:1fr;gap:4px;}
+    .when{padding-top:0;}
+    .strip img{height:230px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 
   /* ---------- print / PDF ---------- */
   @media print{
@@ -322,10 +326,45 @@
       --shadow:none;
       --frame:#0e1a1826;
     }
-    @page{margin:14mm 12mm;}
-    body{font-size:11.5pt;line-height:1.5;background:#fff;}
-    .page{max-width:none;padding:0;gap:34px;}
-  </style>
+    @page{size:A4;margin:14mm 12mm;}
+    body{font-size:11pt;line-height:1.5;background:#fff;}
+
+    /* block layout so the printer can paginate: flex containers do not fragment */
+    .page{display:block;max-width:none;padding:0;}
+    .page > * + *{margin-top:26px;}
+    .masthead{display:block;}
+    section{display:block;}
+    section > * + *{margin-top:16px;}
+    .projects{display:block;}
+    .roles{display:block;}
+    .roles > * + *{margin-top:22px;}
+
+    h1{font-size:34pt;}
+    .lede{font-size:12pt;}
+    .lede + .lede{margin-top:12px;}
+    .chip{background:none;border-color:var(--line);}
+
+    .project{
+      display:block;
+      break-before:page;page-break-before:always;
+      break-inside:avoid;page-break-inside:avoid;
+      border-top:none;
+      padding:0;
+    }
+    .project > * + *{margin-top:11px;}
+    .project:last-child{border-bottom:none;}
+    .exp{break-before:page;page-break-before:always;}
+
+    .hero{break-inside:avoid;page-break-inside:avoid;}
+    .hero img{max-height:58mm;object-fit:cover;object-position:top;}
+    .strip{overflow:visible;flex-wrap:wrap;gap:7px;break-inside:avoid;page-break-inside:avoid;}
+    .strip img{height:42mm;width:auto;max-width:100%;}
+    .role-item,.sub,.stats,.phead,.links{break-inside:avoid;page-break-inside:avoid;}
+
+    a{color:var(--ink);text-decoration:none;}
+    .more-link{color:var(--accent);}
+  }
+</style>
 </head>
 <body>
 <div class="page">
@@ -553,7 +592,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="exp">
     <h2 class="eyebrow">Experience</h2>
     <div class="roles">
       <div class="role-item">
