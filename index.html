@@ -69,10 +69,8 @@
 
   /* ---------- masthead ---------- */
   .masthead{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) 152px;
-    gap:32px;
-    align-items:start;
+    display:flex;
+    flex-direction:column;
   }
   .hello{
     font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace;
@@ -101,14 +99,6 @@
     margin:12px 0 0;
   }
   .role strong{color:var(--ink);font-weight:600;}
-  .portrait{
-    width:152px;height:152px;
-    border-radius:50%;
-    display:block;
-    object-fit:cover;
-    background:var(--surface);
-    box-shadow:0 0 0 1px var(--line), 0 0 0 8px var(--accent-soft);
-  }
   .lede{margin:0;font-size:19px;max-width:62ch;}
   .lede.quiet{color:var(--muted);}
 
@@ -315,13 +305,7 @@
 
   @media (max-width:620px){
     .page{padding:40px 20px 56px;gap:44px;}
-    .masthead{grid-template-columns:1fr;gap:24px;}
-    .portrait{width:104px;height:104px;}
-    .role-item{grid-template-columns:1fr;gap:4px;}
-    .when{padding-top:0;}
-    .strip img{height:230px;}
-  }
-  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+    @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
 
   /* ---------- print / PDF ---------- */
   @media print{
@@ -341,21 +325,7 @@
     @page{margin:14mm 12mm;}
     body{font-size:11.5pt;line-height:1.5;background:#fff;}
     .page{max-width:none;padding:0;gap:34px;}
-    .masthead{grid-template-columns:minmax(0,1fr) 118px;}
-    .portrait{width:118px;height:118px;box-shadow:0 0 0 1px var(--line);}
-    h1{font-size:38pt;}
-    .lede{font-size:12pt;}
-    .chip{background:none;border-color:var(--line);}
-    .project{break-inside:avoid;page-break-inside:avoid;padding:20px 0 22px;gap:12px;}
-    .strip{overflow:visible;flex-wrap:wrap;gap:8px;}
-    .strip img{height:48mm;width:auto;max-width:100%;}
-    .hero img{max-height:78mm;object-fit:cover;object-position:top;}
-    .role-item,.sub,.stats{break-inside:avoid;page-break-inside:avoid;}
-    section{gap:18px;}
-    a{color:var(--ink);text-decoration:none;}
-    .more-link{color:var(--accent);}
-  }
-</style>
+  </style>
 </head>
 <body>
 <div class="page">
@@ -366,7 +336,6 @@
       <h1>Ilkhom<br />Shergoziyev</h1>
       <p class="role">Senior Android &amp; Flutter Developer &nbsp;·&nbsp; Android Team Lead at <strong>Telecom Soft</strong>, Tashkent</p>
     </div>
-    <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Ilkhom Shergoziyev" />
   </header>
 
   <section>
