@@ -1,0 +1,177 @@
+HH.UZ — READY-TO-PASTE RESUME BLOCKS
+Ilkhom Shergoziyev · updated from the portfolio (github.com/IlhomSh/Portfolio)
+Each block below maps to one field on hh.uz. Copy the text between the lines.
+
+
+========================================================================
+1. DESIRED POSITION  (Желаемая должность)
+========================================================================
+Senior Android / Flutter Developer (Android Team Lead)
+
+Specializations: Programmer, developer
+Employment: full time, project work
+Work format: at the employer's location / hybrid
+
+
+========================================================================
+2. PERSONAL SITE / PORTFOLIO  (Контакты → Сайт, портфолио)
+========================================================================
+https://github.com/IlhomSh/Portfolio
+https://www.linkedin.com/in/ilhomshergoziyev
+https://t.me/Ilhom_Shergoziyev
+
+(Remove the old Notion link — it is outdated.)
+
+
+========================================================================
+3. ABOUT ME  (О себе)
+========================================================================
+Mobile developer and team lead with 7+ years building large-scale Android
+and Flutter products for telecom, government and service companies in
+Uzbekistan. I lead an Android team — overseeing projects, guiding how their
+architecture is built and mentoring developers — while shipping new apps
+from zero and keeping high-load production apps healthy. The applications I
+am responsible for carry 3.5M+ monthly active users in total, including a
+national e-government identity app and the country's largest telecom
+self-service app.
+
+Selected projects:
+— MyUztelecom (Android, team lead) — operator self-service app: 2.5M MAU,
+  $800k+ of services sold in-app per month.
+— OneID mobile (Android + iOS, built from zero) — national e-government
+  identity app: 900K MAU, 4.6★ from 5,010 ratings.
+— Joymee (Android, ongoing) — property marketplace: 300K MAU, 4.8★ from
+  21,900 ratings.
+— Hamroh (Android + iOS, team lead) — road safety and traffic fines: raised
+  the core structure, led the security work, delivered the MVP; 50K MAU.
+— MyUzbekistan (Android + iOS, from scratch in Flutter) — travel guide,
+  routes and bookings: 40K MAU.
+— Mediabox (Android, Android TV) — TV / OTT / VOD platform client.
+— TelecomCar (Android + iOS, Flutter) — internal ride and delivery service.
+— TSoft HRM (Android + iOS, advisor) — HR management system.
+— TelecomChat (Flutter) — secure messenger for business correspondence.
+— Test-2022 (Android + iOS) — online supervision of exam sessions via video.
+— EpaUsta (Android) — loyalty programme app.
+
+
+========================================================================
+4. WORK EXPERIENCE  (Опыт работы)
+========================================================================
+
+--- 4.1 ---------------------------------------------------------------
+Company:   Telecom Soft
+Site:      tsoft.uz
+City:      Tashkent
+Period:    December 2023 — present
+Position:  Senior Mobile Developer, Android Team Lead
+-----------------------------------------------------------------------
+- Lead the Android team: project oversight, review of how architecture is
+  built on each project, technical guidelines and mentoring of developers.
+- MyUztelecom — team lead on the operator's self-service app: 2.5M monthly
+  active users and $800k+ of services sold in-app per month (Google Play,
+  Huawei AppGallery).
+- Hamroh — road-safety app: raised its core structure, carried the security
+  workstream and delivered the MVP as team lead; now advising. 50K MAU.
+- Mediabox — client for the company's TV / OTT / VOD platform, built for
+  Android phones and Android TV.
+- TelecomCar and TelecomChat — internal ride service (Android + iOS from one
+  Flutter codebase) and a secure messenger for business correspondence.
+- TSoft HRM — advisor on the company's HR management app, published on
+  Google Play and the App Store.
+- Deliver new applications from scratch, keep production apps stable under
+  high load, and work with backend, QA, design and product through release.
+
+
+--- 4.2 ---------------------------------------------------------------
+Company:   Digital Government Project Management Center
+           (under the Ministry of Digital Technologies of Uzbekistan)
+Site:      id.egov.uz
+City:      Tashkent
+Period:    July 2025 — 31 August 2026  (contract-based)
+Position:  Mobile Developer
+-----------------------------------------------------------------------
+- OneID mobile — the national single-identification app that opens every
+  electronic state service through one account: raised it from zero and
+  shipped it for Android and iOS.
+- 900K monthly active users, 4.6★ from 5,010 ratings on Google Play.
+- Owned the security of the application code and of the personal data it
+  processes; implemented and integrated new features.
+- Monitored performance, analysed incidents and resolved technical problems
+  in production.
+
+
+--- 4.3 ---------------------------------------------------------------
+Company:   ML-Boutique LLC
+City:      Moscow (remote)
+Period:    January 2025 — November 2025
+Position:  Mobile Developer
+-----------------------------------------------------------------------
+- MyUzbekistan — travel companion for tourists across Uzbekistan: built both
+  the Android and the iOS app from scratch in Flutter. 40K MAU, published on
+  Google Play and the App Store.
+- Led planning for the mobile side: roadmap, priorities and release
+  coordination with development, design and product teams.
+- Defined technical requirements, guidelines and best practices for the
+  mobile projects.
+
+
+--- 4.4 ---------------------------------------------------------------
+Company:   JSC Uztelecom
+Site:      uztelecom.uz
+City:      Tashkent
+Period:    April 2019 — December 2023
+Position:  Software Engineer, Mobile
+-----------------------------------------------------------------------
+- Led a mobile development team and mentored junior and mid-level developers.
+- Delivered multiple applications from scratch to production for
+  telecommunication services and solutions.
+- Developed, launched and optimised a high-load application with 3M+ monthly
+  active users; integrated REST APIs and improved stability and the
+  crash-free rate.
+
+
+--- 4.5 ---------------------------------------------------------------
+Company:   Freelance
+City:      Tashkent
+Period:    March 2022 — May 2022
+Position:  Flutter Developer
+-----------------------------------------------------------------------
+- Built applications from scratch and improved existing ones — among them
+  EpaUsta, a loyalty app on Google Play where a master registers by card
+  number, adds purchases by the code on the product package and collects
+  points.
+- Google Play: https://play.google.com/store/apps/details?id=com.epa.release
+
+
+========================================================================
+5. KEY SKILLS  (Ключевые навыки — add one by one as tags)
+========================================================================
+Android, Kotlin, Java, Android SDK, Jetpack Compose, XML, Android TV,
+Flutter, Dart, GetX, Dio, Hive, MVVM, Clean Architecture, SOLID, Koin,
+Dagger 2, RxJava, REST API, Retrofit, OkHttp, GraphQL, Firebase,
+Google Maps, Glide, Git, Jira, Team leadership, Mentoring,
+Mobile application security, Code review
+
+
+========================================================================
+6. EDUCATION  (Образование)
+========================================================================
+Tashkent University of Information Technologies — Master's degree, 2022
+Telecommunications · Telecommunications engineer
+
+
+========================================================================
+7. LANGUAGES  (Знание языков)
+========================================================================
+Uzbek — native
+English — A2, Elementary
+
+
+========================================================================
+8. WHEN APPLYING TO A VACANCY
+========================================================================
+Attach the designed PDF (Shergoziyev-Ilhom-Resume.pdf) to the application
+and add one line to the cover letter, for example:
+
+  "A short portfolio with screenshots and metrics for every app:
+   https://github.com/IlhomSh/Portfolio"
