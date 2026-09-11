@@ -1,0 +1,203 @@
+LINKEDIN PROFILE — READY-TO-PASTE
+linkedin.com/in/ilhomshergoziyev · prepared from the portfolio (ilhomsh.github.io/Portfolio)
+
+Hozirgi holat: sarlavha "Android/Flutter developer", About yo'q, Experience yo'q,
+Skills yo'q, Featured yo'q. Quyidagilarni tartib bilan qo'shsangiz, profil to'liq bo'ladi.
+Har bir blok LinkedIn'dagi bitta maydonga mos keladi.
+
+
+========================================================================
+1. HEADLINE  (ism ostidagi qator · max 220 belgi)
+========================================================================
+Senior Android & Flutter Developer | Android Team Lead at Telecom Soft | Apps with 3.5M+ monthly active users | Kotlin · Flutter · Jetpack Compose
+
+Muqobil variantlar:
+
+Android Team Lead & Senior Mobile Developer | Kotlin, Flutter | Building high-load apps for telecom and e-government in Uzbekistan
+
+Senior Android/Flutter Engineer | Team Lead @ Telecom Soft | OneID, MyUztelecom, Hamroh | 7+ years
+
+
+========================================================================
+2. ABOUT  (max 2 600 belgi)
+========================================================================
+I build Android and Flutter apps that a large part of Uzbekistan uses every day.
+
+Over 7+ years I have gone from developer to Android team lead: today I oversee our projects at Telecom Soft, guide how their architecture is built, mentor the team and still ship new products from zero. The applications I am responsible for carry more than 3.5M monthly active users in total.
+
+What I have shipped:
+
+• MyUztelecom — the self-service app of JSC Uztelecom, where I work as team lead. 2.5M monthly active users and $800k+ of services sold in the app every month.
+• OneID mobile — the national single-identification app that opens every electronic state service through one account. I raised it from zero for Android and iOS; 900K monthly active users, 4.6★ on Google Play.
+• Joymee — property marketplace with 300K monthly active users, 4.8★ from 21,900 ratings; I work on the Android app.
+• Hamroh — road-safety and traffic-fine app: I raised its core structure as team lead, carried the security workstream and delivered the MVP. 50K monthly active users.
+• MyUzbekistan — travel companion for tourists across the country: both the Android and the iOS app built from scratch in Flutter.
+• Mediabox (Android TV / OTT / VOD), TelecomCar, TelecomChat, TSoft HRM and a few smaller products.
+
+How I work: clean architecture and MVVM, code that survives high load, security taken seriously — especially on apps that carry citizens' personal data — and a team that grows through review and mentoring.
+
+Tech: Kotlin, Java, Jetpack Compose, Android SDK, Android TV, RxJava, Koin, Dagger 2 · Flutter, Dart, GetX, Dio, Hive · REST API, Retrofit, OkHttp, GraphQL, Firebase, Google Maps · Clean Architecture, MVVM, SOLID, Git, Jira.
+
+Portfolio with screenshots and numbers for every app: https://ilhomsh.github.io/Portfolio/
+Open to interesting Android / Flutter work — reach me at ilhomshergoziyev@gmail.com or t.me/Ilhom_Shergoziyev
+
+
+========================================================================
+3. EXPERIENCE  (har bir ish joyi alohida yozuv)
+========================================================================
+
+--- 3.1 ---------------------------------------------------------------
+Title:        Senior Mobile Developer, Android Team Lead
+Company:      Telecom Soft
+Type:         Full-time
+Dates:        December 2023 — Present
+Location:     Tashkent, Uzbekistan · On-site
+Skills (tag): Kotlin · Android · Flutter · Jetpack Compose · Team Leadership
+-----------------------------------------------------------------------
+Lead the Android team: project oversight, review of how architecture is built on each project, technical guidelines and mentoring.
+
+• MyUztelecom — team lead on the operator's self-service app: 2.5M monthly active users, $800k+ of services sold in-app per month (Google Play, Huawei AppGallery).
+• Hamroh — road-safety app: raised its core structure, carried the security workstream and delivered the MVP as team lead; now advising. 50K MAU.
+• Mediabox — client for the company's TV / OTT / VOD platform, for Android phones and Android TV.
+• TelecomCar and TelecomChat — internal ride service (Android + iOS from one Flutter codebase) and a secure messenger for business correspondence.
+• TSoft HRM — advisor on the company's HR management app, live on Google Play and the App Store.
+• Deliver new applications from scratch, keep production apps stable under high load, and work with backend, QA, design and product through release.
+
+
+--- 3.2 ---------------------------------------------------------------
+Title:        Mobile Developer (Contract)
+Company:      Digital Government Project Management Center
+Type:         Contract
+Dates:        July 2025 — August 2026
+Location:     Tashkent, Uzbekistan
+Skills (tag): Android · iOS · Flutter · Mobile Security
+-----------------------------------------------------------------------
+OneID mobile — the national single-identification app of Uzbekistan that opens every electronic state service through one account.
+
+• Raised the project from zero and shipped it for Android and iOS.
+• 900K monthly active users, 4.6★ from 5,010 ratings on Google Play.
+• Owned the security of the application code and of the personal data it processes.
+• Implemented and integrated new features; monitored performance, analysed incidents and resolved production problems.
+
+
+--- 3.3 ---------------------------------------------------------------
+Title:        Mobile Developer
+Company:      ML-Boutique LLC
+Type:         Full-time · Remote
+Dates:        January 2025 — November 2025
+Location:     Moscow, Russia · Remote
+Skills (tag): Flutter · Dart · iOS · Android
+-----------------------------------------------------------------------
+MyUzbekistan — travel companion for tourists across Uzbekistan.
+
+• Built both the Android and the iOS app from scratch in Flutter. 40K monthly active users, published on Google Play and the App Store.
+• Led planning for the mobile side: roadmap, priorities and release coordination with development, design and product.
+• Defined technical requirements, guidelines and best practices for the mobile projects.
+
+
+--- 3.4 ---------------------------------------------------------------
+Title:        Software Engineer, Mobile
+Company:      JSC Uztelecom
+Type:         Full-time
+Dates:        April 2019 — December 2023
+Location:     Tashkent, Uzbekistan
+Skills (tag): Kotlin · Android · MVVM · REST API
+-----------------------------------------------------------------------
+• Led a mobile development team and mentored junior and mid-level developers.
+• Delivered multiple applications from scratch to production for telecommunication services and solutions.
+• Developed, launched and optimised a high-load application with 3M+ monthly active users.
+• Integrated REST APIs and improved application stability and the crash-free rate.
+
+
+--- 3.5 ---------------------------------------------------------------
+Title:        Flutter Developer
+Company:      Freelance
+Type:         Freelance
+Dates:        March 2022 — May 2022
+Location:     Tashkent, Uzbekistan
+-----------------------------------------------------------------------
+• Built applications from scratch and improved existing ones — among them EpaUsta, a loyalty app on Google Play: a master registers by card number, adds purchases by the code on the product package and collects points.
+
+
+========================================================================
+4. SKILLS  (Skills → Add skill · eng muhim 3 tasini "pin" qiling)
+========================================================================
+Pin qilinadigan 3 ta:  Android Development · Flutter · Team Leadership
+
+To'liq ro'yxat:
+Android Development, Kotlin, Java, Jetpack Compose, Android SDK, Android TV,
+Flutter, Dart, GetX, Dio, Hive, MVVM, Clean Architecture, SOLID,
+Koin, Dagger 2, RxJava, REST API, Retrofit, OkHttp, GraphQL, Firebase,
+Google Maps API, Glide, Git, Jira, Team Leadership, Mentoring,
+Mobile Application Security, Code Review, Agile Methodologies,
+Cross-platform Development, Mobile Architecture, Performance Optimization
+
+Maslahat: har bir Experience yozuvida ham 3-5 tadan skill belgilang — LinkedIn qidiruvida
+shu bog'lanish og'irlik beradi.
+
+
+========================================================================
+5. FEATURED  (Add profile section → Recommended → Add featured)
+========================================================================
+Link 1:  https://ilhomsh.github.io/Portfolio/
+         Title: Portfolio — 10 apps, screenshots and metrics
+Link 2:  https://play.google.com/store/apps/details?id=uz.egov.oneId
+         Title: OneID mobile — national e-government identity app
+Link 3:  https://play.google.com/store/apps/details?id=uz.mobilex.hamroh
+         Title: Hamroh — road safety and traffic fines
+Link 4:  https://play.google.com/store/apps/details?id=com.joymee.app
+         Title: Joymee — property marketplace, 4.8★
+
+
+========================================================================
+6. PROJECTS  (Add profile section → Additional → Add projects)
+========================================================================
+OneID mobile — Android + iOS, built from zero
+  Jul 2025 – Aug 2026 · 900K MAU, 4.6★
+  https://play.google.com/store/apps/details?id=uz.egov.oneId
+
+MyUztelecom — Android, team lead
+  Dec 2023 – Present · 2.5M MAU, $800k+/month in-app sales
+  https://play.google.com/store/apps/details?id=uz.uztelecom.telecom
+
+Joymee — Android, ongoing
+  300K MAU, 4.8★ from 21,900 ratings
+  https://play.google.com/store/apps/details?id=com.joymee.app
+
+Hamroh — Android + iOS, team lead, MVP
+  50K MAU, 4.3★
+  https://play.google.com/store/apps/details?id=uz.mobilex.hamroh
+
+MyUzbekistan — Android + iOS, from scratch in Flutter
+  40K MAU · https://play.google.com/store/apps/details?id=uz.travel.my.uzb
+
+TSoft HRM — Android + iOS, advisor
+  https://play.google.com/store/apps/details?id=uz.uztelecom.hrm
+
+
+========================================================================
+7. EDUCATION / LANGUAGES
+========================================================================
+Tashkent University of Information Technologies named after Muhammad al-Khwarizmi
+Master's degree · Telecommunications · 2022
+
+Languages:  Uzbek — Native or bilingual · English — Elementary (A2)
+
+
+========================================================================
+8. CHECKLIST — profilni "kuchli" qiladigan qadamlar
+========================================================================
+[ ] Profil rasmi — oddiy, yorug', yuz aniq ko'rinadigan (portfoliodagi surat mos keladi)
+[ ] Banner (kover rasm) — 1584×396 px; ilovalar skrinshotlaridan kollaj yoki oddiy rangli fon
+[ ] "Open to work" → Job titles: Senior Android Developer, Flutter Developer,
+    Mobile Team Lead; Location: Tashkent + Remote; faqat rekruterlarga ko'rinsin deb belgilang
+[ ] Contact info → Website: ilhomsh.github.io/Portfolio (Portfolio deb nomlang)
+[ ] Custom URL allaqachon yaxshi: linkedin.com/in/ilhomshergoziyev ✅
+[ ] Aloqalar soni hozir 48 ta — O'zbekistondagi Android/Flutter dasturchilari,
+    rekruterlar va TelecomSoft hamkasblarini qo'shing (100+ dan keyin profil
+    qidiruvda sezilarli yuqori chiqadi)
+[ ] Featured va Projects bo'limlarini qo'shing (yuqoridagi 5 va 6-bandlar)
+[ ] Bitta post yozing: OneID yoki Hamroh haqida — nima qilgansiz, qanday muammoni
+    yechgansiz, qanday raqamlarga erishgansiz + 2-3 ta skrinshot.
+    Profil to'ldirilgandan keyin chiqarilgan post eng yaxshi natija beradi.
+[ ] Hamkasblardan 1-2 ta "Recommendation" so'rang (team lead sifatida ishonch beradi)
