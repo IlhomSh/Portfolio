@@ -84,7 +84,7 @@ OneID mobile — the national single-identification app of Uzbekistan that opens
 Title:        Mobile Developer
 Company:      ML-Boutique LLC
 Type:         Full-time · Remote
-Dates:        January 2025 — November 2025
+Dates:        January 2025 — April 2026
 Location:     Moscow, Russia · Remote
 Skills (tag): Flutter · Dart · iOS · Android
 -----------------------------------------------------------------------

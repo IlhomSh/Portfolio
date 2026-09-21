@@ -103,7 +103,7 @@ Position:  Mobile Developer
 --- 4.3 ---------------------------------------------------------------
 Company:   ML-Boutique LLC
 City:      Moscow (remote)
-Period:    January 2025 — November 2025
+Period:    January 2025 — April 2026
 Position:  Mobile Developer
 -----------------------------------------------------------------------
 - MyUzbekistan — travel companion for tourists across Uzbekistan: built both
