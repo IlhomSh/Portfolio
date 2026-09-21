@@ -32,7 +32,7 @@ What I have shipped:
 • Joymee — property marketplace with 300K monthly active users, 4.8★ from 21,900 ratings; I work on the Android app.
 • Hamroh — road-safety and traffic-fine app: I raised its core structure as team lead, carried the security workstream and delivered the MVP. 50K monthly active users.
 • MyUzbekistan — travel companion for tourists across the country: both the Android and the iOS app built from scratch in Flutter.
-• Mediabox (Android TV / OTT / VOD), TelecomCar, TelecomChat, TSoft HRM and a few smaller products.
+• Mediabox and Mediabay (Android TV / Smart TV, OTT / VOD), TelecomCar, TelecomChat, TSoft HRM and a few smaller products.
 
 How I work: clean architecture and MVVM, code that survives high load, security taken seriously — especially on apps that carry citizens' personal data — and a team that grows through review and mentoring.
 
@@ -140,7 +140,7 @@ shu bog'lanish og'irlik beradi.
 5. FEATURED  (Add profile section → Recommended → Add featured)
 ========================================================================
 Link 1:  https://ilhomsh.github.io/Portfolio/
-         Title: Portfolio — 10 apps, screenshots and metrics
+         Title: Portfolio — 11 apps, screenshots and metrics
 Link 2:  https://play.google.com/store/apps/details?id=uz.egov.oneId
          Title: OneID mobile — national e-government identity app
 Link 3:  https://play.google.com/store/apps/details?id=uz.mobilex.hamroh
